@@ -39,3 +39,24 @@
 
 // Func()
 
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Stack -- (Primitive)  , Heap --(Non-Primitive)
+//Stack(copy of value), heap (refering original value)
+
+//Example
+let name1 = "Rakesh"
+let name2 = name1  // this name1 is a copy of name1 
+name2 = "Rk" 
+
+console.log(name1); //Rakesh - original value not changed
+console.log(name2); 
+
+//But in case of heap memory(Non-primitive DataTypes)
+
+let obj1 = {
+    name1:"Rakesh",
+    age:20
+}
+let obj2 = obj1 //refering the original value of obj1
+obj2.name1 = "rk" //changing the original value.
+console.log(obj1.name1); //name changed to "rk"
