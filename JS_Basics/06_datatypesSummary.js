@@ -13,6 +13,9 @@
 // let useremail  //undefined
 
 // const id = Symbol('145')  //Symbol
+// let bigNum = 9831987481328784738167n
+// console.log(typeof bigNum);
+// console.log(typeof id);
 // const id2 = Symbol('145')
 // console.log(id === id2);
 
@@ -25,6 +28,7 @@
 // Arrays, Objects, Functions
 
 // const heros = ["shaktiMan", "Naagraj", "Doga", "Rakesh"];  //array
+// console.log(typeof heros);
 // let obj = {       //Object
 //     name:"Rakesh", 
 //     age:20,
@@ -32,6 +36,7 @@
 // const myFunc = function(){  //Function
 //     console.log("Function");
 // }
+// console.log(typeof myFunc);
 
 // const Func = () => {
 //     console.log("arrow Function");
@@ -44,19 +49,34 @@
 //Stack(copy of value), heap (refering original value)
 
 //Example
-let name1 = "Rakesh"
-let name2 = name1  // this name1 is a copy of name1 
-name2 = "Rk" 
+// let name1 = "Rakesh"
+// let name2 = name1  // this name1 is a copy of name1 
+// name2 = "Rk" 
 
-console.log(name1); //Rakesh - original value not changed
-console.log(name2); 
+// console.log(name1); //Rakesh - original value not changed
+// console.log(name2); 
 
 //But in case of heap memory(Non-primitive DataTypes)
 
-let obj1 = {
-    name1:"Rakesh",
-    age:20
-}
-let obj2 = obj1 //refering the original value of obj1
-obj2.name1 = "rk" //changing the original value.
-console.log(obj1.name1); //name changed to "rk"
+// let obj1 = {
+//     name1:"Rakesh",
+//     age:20
+// }
+// let obj2 = obj1 //refering the original value of obj1
+// obj2.name1 = "rk" //changing the original value.
+// console.log(obj1.name1); //name changed to "rk"
+
+//type of Val 
+// Primitive (7)
+// undefined -- "undefined"
+// null      -- "object"
+// Boolean   -- "boolean"
+// Number    -- "number"
+// BigInt    -- "bigint"
+// String    -- "string"
+// Symbol    -- "symbol"
+
+//Reference (Non-primitive)
+// object    -- "object"
+// Array     -- "object"
+// Function  -- "function"
