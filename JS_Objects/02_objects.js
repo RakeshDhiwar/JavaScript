@@ -11,12 +11,21 @@ const regularUser = {
 User.regUser = regularUser
 // console.log(User);
 
+// object nesting
+// log(regularUser.fullname.userfullname.firstname)
+//    
+// Optional Chaining
+// log(regularUser.fullname?.userfullname.firstname)
+
+
+
 const obj1 = {1:"a",2:"b"}
 const obj2 = {3:"a",4:"b"}
 
 // Combining objects using Object.assign
-// const obj3 = Object.assign({},obj1,obj2)
-// console.log(obj3);
+const obj3 = Object.assign({},obj1,obj2)
+console.log(obj3);
+console.log(obj1);
 
 //Combining through spread operator
 // const obj4 = {...obj1, ...obj2}
