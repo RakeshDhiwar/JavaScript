@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="t1">DOM Learning</title>
+    <style>
+        *{
+            background-color: #212121;
+        }
+        .bg-black{
+            background-color: #212121;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-black">
+        <h1 id="title" class="heading">DOM learning </h1>
+        <p>Lorem ipsum dolor sit amet.
+        </p>
+    </div>
+</body>
+</html>
+
+<!-- document.getElementsByClassName('heading')
+HTMLCollection [h1#title.heading, title: h1#title.heading]0: h1#title.headingtitle: h1#title.headinglength: 1[[Prototype]]: HTMLCollection
+document.getElementById('title')
+<h1 id=​"title" class=​"heading">​DOM learning ​</h1>​ -->
+<!-- 
+document.getElementById('title').id
+'title'
+
+document.getElementById('title').className
+'heading'
+
+document.getElementById('title').setAttribute('class','test heading')
+undefined
+
+document.getElementById('title').className
+'test heading'
+
+title.sty
+undefined
+
+title.style.backgroundColor = 'green'
+'green'
+
+test.style.borderRadius = '5px'
+VM2507:1 Uncaught ReferenceError: test is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM2507:1
+
+heading.style.borderRadius = '5px'
+VM2523:1 Uncaught ReferenceError: heading is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM2523:1
+
+title.style.borderRadius = '5px'
+'5px' 
+
+
+title.textContent
+'DOM learning '
+title.innerHTML
+'DOM learning '
+title.innerHTML
+'DOM learning '
+-->
