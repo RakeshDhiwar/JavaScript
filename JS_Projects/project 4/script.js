@@ -33,7 +33,7 @@ function validateGuess(guess) {
     alert('PLease enter a  number less than 100');
   } else {
     prevGuess.push(guess);
-    if (numGuess === 11) {
+    if (numGuess === 10) {
       displayGuess(guess);
       displayMessage(`Game Over. Random number was ${randomNumber}`);
       endGame();
@@ -71,6 +71,8 @@ function endGame() {
   userInput.setAttribute('disabled', '');
   p.classList.add('button');
   p.innerHTML = `<h2 id="newGame">Start new Game</h2>`;
+  p.style.backgroundColor = "lightgray";
+  p.style.width = '150px';
   startOver.appendChild(p);
   playGame = false;
   newGame();
@@ -84,6 +86,7 @@ function newGame() {
     numGuess = 1;
     guessSlot.innerHTML = '';
     remaining.innerHTML = `${11 - numGuess} `;
+    lowOrHi.innerHTML = ''
     userInput.removeAttribute('disabled');
     startOver.removeChild(p);
 
